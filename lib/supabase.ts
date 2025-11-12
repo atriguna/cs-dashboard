@@ -8,8 +8,10 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 export interface CSEvaluation {
   id: string;
   ticket_id: string | null;
+  room_id: string | null;
   agent_name: string | null;
   channel_account: string | null;
+  customer_name: string | null;
   customer_message: string | null;
   cs_reply: string | null;
   suggested_reply: string | null;

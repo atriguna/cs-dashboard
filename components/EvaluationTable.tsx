@@ -462,6 +462,12 @@ export default function EvaluationTable({ evaluations }: EvaluationTableProps) {
                       )}
                     </div>
                     <div className="text-right space-y-2">
+                      {evaluation.customer_name && (
+                        <div>
+                          <p className="text-sm text-gray-500 dark:text-gray-400">Customer</p>
+                          <p className="text-base font-semibold text-gray-900 dark:text-white">{evaluation.customer_name}</p>
+                        </div>
+                      )}
                       <div>
                         <p className="text-sm text-gray-500 dark:text-gray-400">Agent</p>
                         <p className="text-base font-semibold text-gray-900 dark:text-white">{evaluation.agent_name || 'Unknown'}</p>
